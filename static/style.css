@@ -12,6 +12,11 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  
+
+  
+
+  
 }
 
 /* ========= 标题 ========= */
@@ -71,4 +76,34 @@ button:hover {
 .progress-bar {
   height: 100%;
   transition: width 0.5s ease;
+}
+
+
+#stats {
+  max-width: 640px;
+  width: 90%;
+  margin: 20px auto;
+  padding: 15px;
+  background: rgba(0, 0, 60, 0.6);
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.4);
+  text-align: left;
+  font-size: 16px;
+}
+
+.stat-label {
+  margin-bottom: 4px;
+  font-weight: bold;
+  color: #fff;
+  text-shadow: 0 1px 3px rgba(0,0,0,0.6);
+}
+
+#stat-int .progress-bar {
+  background: linear-gradient(90deg, #00c3ff, #0066ff);
+}
+#stat-health .progress-bar {
+  background: linear-gradient(90deg, #ff4d4d, #990000);
+}
+#stat-happy .progress-bar {
+  background: linear-gradient(90deg, #33cc33, #006600);
 }
