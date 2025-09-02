@@ -9,6 +9,22 @@
   <h1>Life Restart – Duke Kunshan University</h1>
   <div id="screen"></div>
 
+
+  <div id="stats">
+  <div class="stat">
+    <div class="stat-label">📖 Int</div>
+    <div id="stat-int" class="progress"><div class="progress-bar" style="width:50%"></div></div>
+  </div>
+  <div class="stat">
+    <div class="stat-label">❤️ Health</div>
+    <div id="stat-health" class="progress"><div class="progress-bar" style="width:100%"></div></div>
+  </div>
+  <div class="stat">
+    <div class="stat-label">😊 Happy</div>
+    <div id="stat-happy" class="progress"><div class="progress-bar" style="width:50%"></div></div>
+  </div>
+</div>
+
 <script>
 let state = { int:50, health:100, happy:50, events:[], step:'intro' };
 const screen = document.getElementById('screen');
